@@ -48,5 +48,7 @@ tcpdump -i dcp1
 
 ```
 ## adding bear metal route to ubuntu
+```
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 ip route add 12.1.1.0/24 via 172.20.0.1 dev eth0
+```
