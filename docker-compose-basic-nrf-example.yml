@@ -388,6 +388,12 @@ services:
         networks:
           testnet:
             ipv4_address: 172.20.0.3
+          public_net:
+            ipv4_address: 192.168.70.135
+        privileged: true
+        cap_add:
+          - NET_ADMIN
+
 
    
 
